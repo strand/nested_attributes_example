@@ -1,4 +1,7 @@
 NestedAttributesExample::Application.routes.draw do
+  resources :boards
+
+
   resources :houses
 
 
