@@ -12,5 +12,12 @@
   .field
     = f.label :name
     = f.text_field :name
+  = f.fields_for :board do |board_f|
+    .field
+      = board_f.label :title
+      = board_f.text_field :title
+    .field
+      = board_f.label :content
+      = board_f.text_area :content
   .actions
     = f.submit 'Save'
