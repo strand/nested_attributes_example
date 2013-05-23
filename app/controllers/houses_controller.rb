@@ -25,6 +25,7 @@ class HousesController < ApplicationController
   # GET /houses/new.json
   def new
     @house = House.new
+    @house.build_board  # same as @house.board = Board.new
 
     respond_to do |format|
       format.html # new.html.erb
